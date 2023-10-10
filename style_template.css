@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+    margin: 50px;
+    font-family: 'Verdana', 'Calibri', 'Trebuchet MS', sans-serif; 
+    font-weight: 400;
+  }
+
+#wrapper {
+  text-align: left;
+  margin: 10px auto 10px auto;
+  background-color: #f2edda;
+  color: #555344;
+}
+
+/* Style the header */
+header {
+    text-align: left;
+    padding: 60px;
+    background-color: #756d50;
+    font-size: 35px;
+    color: #f2edda;
+  }
+
+/* Container for flexboxes */
+.container {
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  background-color: #f5d45d;
+  padding: 20px; 
+  text-align: left;
+  color: #756d50;
+  float: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Style the containers */
+.content {
+  flex: 2;
+  background-color: #f2edda;
+  padding: 10px;
+  color: #555344;
+  }
+
+/* Style the footer */
+footer {
+  background-color: #f7c704;
+  color:#555344;
+  padding: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;  
+}
+
+/* Responsive layout - makes the navbar and content boxes in the container sit next to each other */
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    width: 30%;
+  }
+
+  body {
+    background-color: #f5d45d;
+  }
+}
+
+/* On screens that are 600px or less, content displays in 1 column */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  body {
+    background-color: #f7e5a8;
+  }
+
+  .content {
+    width: 90%;
+  }
+}
+
+a:link {
+  color: #2a2a22;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2a2a22;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #f7e5a8;
+  text-decoration: underline;
+}
+
+a#current {
+  color: #555344;
+}
+
+h1 {
+  font-size: 140%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 120%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 110%;
+}
+
+h4 {
+  font-size: 100%
+}
+
+p.italic {
+  font-style: italic;  
+}
+
+img.product {
+  aspect-ratio: 4 / 3;
+}
+
